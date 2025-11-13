@@ -1,0 +1,20 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> addOne(vector<int> &v) {
+    v[v.size()-1]++;
+    return v;
+}
+
+
+int main() {
+    vector<int> v = {1,2,3};
+    v = addOne(v);
+    cout<<endl;
+    for (int i = 0; i < v.size(); ++i) {
+        cout << v[i];
+    }
+
+    return 0;
+}
